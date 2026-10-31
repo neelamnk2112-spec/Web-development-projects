@@ -1,0 +1,82 @@
+#playing-cards {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+body {
+  background:#eaf8fd
+}
+.card {
+  display:flex;
+  justify-content:space-between;
+  width:300px;
+  height:400px;
+  outline:1px solid black;
+  border-radius:8px;
+  padding:10px;
+  box-shadow:0 3px 0 3px gray;
+  
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.left{
+  
+  display:flex;
+  flex-direction:column;
+  
+  align-self:flex-start;
+}
+
+.left p {
+  margin: 0;
+}
+.middle {
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+  
+  flex-wrap:wrap;
+  font-size:4rem;
+ 
+}
+
+.middle p{
+  margin:0;
+}
+.reverse {
+  transform:scaleY(-1) scaleX(-1);
+}
+
+.right {
+  display:flex;
+  align-self:flex-end;
+  flex-direction:column;
+}
+.right p{
+  margin:0;
+}
+
+.red {
+  color:red;
+  font-weight:600;
+  
+}
+
+.black {
+  color:black;
+  font-weight:600;
+  
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+.small {
+  font-size:2rem;
+}
